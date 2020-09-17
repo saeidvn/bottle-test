@@ -1,5 +1,4 @@
-from bottle import Bottle, run
-
+from bottle import Bottle
 app = Bottle()
 
 @app.get("/")
@@ -10,6 +9,4 @@ def hello():
 def movies():
     return "<h1>a lot of movies</h1>"
 
-
-run(app)
 
